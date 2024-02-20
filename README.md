@@ -45,7 +45,7 @@ def do_DELETE(self):
 Test command (Windows PowerShell):
 
 
-Invoke-RestMethod -Uri http://localhost:8080 -Method DELETE
+# Invoke-RestMethod -Uri http://localhost:8080 -Method DELETE
 Test command (curl):
 
 
