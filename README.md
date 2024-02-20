@@ -97,7 +97,7 @@ Test command (curl):
 curl -X POST http://127.0.0.1:8080
 ```
 Build and Run Docker Image
-```
+
 Build the Docker image:
 
 ```
@@ -107,4 +107,4 @@ Run the Docker container:
 
 ```
 docker run -p 8080:8080 chenghaohu/notetaker:v1
-```
+
