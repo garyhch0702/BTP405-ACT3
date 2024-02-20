@@ -27,13 +27,15 @@ def do_GET(self):
     for (note_id, title, content) in cursor:
         self.wfile.write(f"{note_id}, {title}, {content}".encode('utf-8'))
 Test command (Windows PowerShell):
-
+```
 
 Invoke-RestMethod -Uri http://localhost:8080
+```
 Test command (curl):
 
 
 curl http://127.0.0.1:8080
+```
 DELETE Request
 Python handler for DELETE requests:
 
@@ -42,10 +44,11 @@ def do_DELETE(self):
     self._set_response()
     cursor.execute("DELETE FROM NOTE")
     cnx.commit()
+    ```
 Test command (Windows PowerShell):
 
 
-# Invoke-RestMethod -Uri http://localhost:8080 -Method DELETE
+ Invoke-RestMethod -Uri http://localhost:8080 -Method DELETE
 Test command (curl):
 
 
