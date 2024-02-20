@@ -16,10 +16,10 @@ docker pull mysql:latest
 docker run --name=mysql1 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password --restart on-failure -d mysql:latest
 API Endpoints
 GET Request
+bash
 Python handler for GET requests:
 
-python
-Copy code
+
 def do_GET(self):
     self._set_response()
     cursor.execute("SELECT note_id, title, content FROM NOTE")
