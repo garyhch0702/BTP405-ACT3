@@ -10,11 +10,11 @@
 
 ## Config MySQL Docker
 First, pull the MySQL Docker image and run the container:
+```
 docker pull mysql:latest
 docker run --name=mysql1 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password --restart on-failure -d mysql:latest
+```
 
-python
-Copy code
 
 ## API Endpoints
 
