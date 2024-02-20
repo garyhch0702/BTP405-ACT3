@@ -46,16 +46,18 @@ def do_DELETE(self):
     self._set_response()
     cursor.execute("DELETE FROM NOTE")
     cnx.commit()
-    ```
+```
 Test command (Windows PowerShell):
 
 ```
  Invoke-RestMethod -Uri http://localhost:8080 -Method DELETE
- ```
+
+```
 Test command (curl):
 ```
 
 curl -X DELETE http://127.0.0.1:8080
+
 ```
 ### PUT Request
 Python handler for PUT requests:
