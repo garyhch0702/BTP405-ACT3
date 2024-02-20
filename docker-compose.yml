@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=GaryHu
+      - DB_USER=root
+      - DB_PASSWORD=657300
+      - DB_NAME=BTPact3
+
+  db:
+    image: mysql:latest
+    container_name: GaryHu
+    environment:
+      MYSQL_ROOT_PASSWORD: 657300
+      MYSQL_DATABASE: BTPact3
+    ports:
+      - "3306:3306"
