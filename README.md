@@ -1,5 +1,3 @@
-markdown
-Copy code
 # BTP405 - Activity 3
 **Student Name:** CHENGHAO HU
 
