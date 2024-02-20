@@ -59,42 +59,52 @@ curl -X DELETE http://127.0.0.1:8080
 ```
 ### PUT Request
 Python handler for PUT requests:
-
+```
 
 def do_PUT(self):
     self._set_response()
     cursor.execute("INSERT INTO NOTE (TITLE, CONTENT) values ('Python', 'Python is fun.')")
     cnx.commit()
+    ```
 Test command (Windows PowerShell):
 
-
+```
 Invoke-RestMethod -Uri http://localhost:8080 -Method PUT
+```
 Test command (curl):
 
-
+```
 curl -X PUT http://127.0.0.1:8080
-POST Request
+```
+###POST Request
+
 Python handler for POST requests:
 
-
+```
 def do_POST(self):
     self._set_response()
     cursor.execute("UPDATE NOTE SET CONTENT = 'Python is amazing!' WHERE TITLE = 'Python'")
     cnx.commit()
+```
 Test command (Windows PowerShell):
-
+```
 
 Invoke-RestMethod -Uri http://localhost:8080 -Method POST
+```
 Test command (curl):
 
-
+```
 curl -X POST http://127.0.0.1:8080
+```
 Build and Run Docker Image
+```
 Build the Docker image:
 
-
+```
 docker build -t chenghaohu/notetaker:v1 .
+```
 Run the Docker container:
 
-
+```
 docker run -p 8080:8080 chenghaohu/notetaker:v1
+```
