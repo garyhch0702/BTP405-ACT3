@@ -76,7 +76,7 @@ Test command (curl):
 ```
 curl -X PUT http://127.0.0.1:8080
 ```
-###POST Request
+### POST Request
 
 Python handler for POST requests:
 
