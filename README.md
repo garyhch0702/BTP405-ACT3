@@ -12,7 +12,8 @@
 First, pull the MySQL Docker image and run the container:
 ```
 docker pull mysql:latest
-docker run --name=mysql1 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password --restart on-failure -d mysql:latest
+docker run --name=GaryHu -p 3306:3306 -e MYSQL_ROOT_PASSWORD=657300 --restart on-failure -d mysql:latest
+
 ```
 
 
@@ -29,7 +30,7 @@ def do_GET(self):
 ```
 Test command (Windows PowerShell):
 
-
+```
 Invoke-RestMethod -Uri http://localhost:8080
 ```
 Test command (curl):
