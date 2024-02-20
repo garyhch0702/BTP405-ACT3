@@ -1,14 +1,16 @@
-# BTP405 - Act 3
+# BTP405 - Activity 3
+**Student Name:** CHENGHAO HU
 
-## About
-This repository contains the code for BTP405 Act 3, developed by Chenghao Hu.
+## Tools and Technologies
+- **Programming Language:** Python
+- **Database:** MySQL
+- **Version Control:** Git
+- **Containerization:** Docker
+- **API Testing:** curl / Invoke-RestMethod (Windows)
 
-## Project Description
-The project is aimed at developing a RESTful API using Python's built-in HTTP server module, enabling clients to perform CRUD (Create, Read, Update, Delete) operations on data stored in a MySQL database. This API serves as the backend for a simple note-taking application.
+## Config MySQL Docker
+First, pull the MySQL Docker image and run the container:
 
-## Technologies Used
-- Programming Language: Python
-- Database: MySQL
-- Version Control: Git
-- Containerization: Docker
-
+```bash
+docker pull mysql:latest
+docker run --name=Gary Hu -p 3306:3306 -e MYSQL_ROOT_PASSWORD=657300 --restart on-failure -d mysql:latest
