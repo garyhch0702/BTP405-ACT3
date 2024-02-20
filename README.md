@@ -41,7 +41,6 @@ curl http://127.0.0.1:8080
 ```
 ### DELETE Request
 Python handler for DELETE requests:
-
 ```
 def do_DELETE(self):
     self._set_response()
@@ -49,37 +48,29 @@ def do_DELETE(self):
     cnx.commit()
 ```
 Test command (Windows PowerShell):
-
 ```
  Invoke-RestMethod -Uri http://localhost:8080 -Method DELETE
-
 ```
 Test command (curl):
 ```
-
 curl -X DELETE http://127.0.0.1:8080
-
 ```
 ### PUT Request
 Python handler for PUT requests:
 ```
-
 def do_PUT(self):
     self._set_response()
     cursor.execute("INSERT INTO NOTE (TITLE, CONTENT) values ('Python', 'Python is fun.')")
     cnx.commit()
-    ```
+```
 Test command (Windows PowerShell):
-
-
 ```
 Invoke-RestMethod -Uri http://localhost:8080 -Method PUT
 ```
 Test command (curl):
-
 ```
 curl -X PUT http://127.0.0.1:8080
-
+```
 ### POST Request
 
 Python handler for POST requests:
