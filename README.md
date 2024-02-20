@@ -35,13 +35,13 @@ Invoke-RestMethod -Uri http://localhost:8080
 ```
 Test command (curl):
 
-
+```
 curl http://127.0.0.1:8080
 ```
-DELETE Request
+### DELETE Request
 Python handler for DELETE requests:
 
-
+```
 def do_DELETE(self):
     self._set_response()
     cursor.execute("DELETE FROM NOTE")
@@ -49,13 +49,15 @@ def do_DELETE(self):
     ```
 Test command (Windows PowerShell):
 
-
+```
  Invoke-RestMethod -Uri http://localhost:8080 -Method DELETE
+ ```
 Test command (curl):
-
+```
 
 curl -X DELETE http://127.0.0.1:8080
-PUT Request
+```
+### PUT Request
 Python handler for PUT requests:
 
 
