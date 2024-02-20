@@ -68,6 +68,7 @@ def do_PUT(self):
     ```
 Test command (Windows PowerShell):
 
+
 ```
 Invoke-RestMethod -Uri http://localhost:8080 -Method PUT
 ```
@@ -75,7 +76,7 @@ Test command (curl):
 
 ```
 curl -X PUT http://127.0.0.1:8080
-```
+
 ### POST Request
 
 Python handler for POST requests:
