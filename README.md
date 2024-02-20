@@ -26,8 +26,9 @@ def do_GET(self):
     cursor.execute("SELECT note_id, title, content FROM NOTE")
     for (note_id, title, content) in cursor:
         self.wfile.write(f"{note_id}, {title}, {content}".encode('utf-8'))
-Test command (Windows PowerShell):
 ```
+Test command (Windows PowerShell):
+
 
 Invoke-RestMethod -Uri http://localhost:8080
 ```
