@@ -15,6 +15,6 @@ First, pull the MySQL Docker image and run the container:
 docker pull mysql:latest
 docker run --name=Gary Hu -p 3306:3306 -e MYSQL_ROOT_PASSWORD=657300 --restart on-failure -d mysql:latest
 
-API Endpoints
-GET Request
+## API Endpoints
+**GET Request**
 Python handler for GET requests:
